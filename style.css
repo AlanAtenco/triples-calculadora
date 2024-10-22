@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #FAD961;
+background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: #FF6F61; /* Color vibrante para el título */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #FF6F61; /* Cambiar a color vibrante */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #FF8E5A; /* Color más brillante al enfocar */
+    outline: none;
+}
+
+button {
+    background-color: #FF6F61; /* Botón de color vibrante */
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #FF4A3A; /* Color más oscuro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+.result {
+    margin-top: 20px;
+    background-color: #FFF3E0; /* Color de fondo más cálido para resultados */
+    border: 1px solid #FFCCBC; /* Borde que resalte */
+    border-radius: 5px;
+    padding: 15px;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.step {
+    margin: 5px 0;
+}
+
+.step.final {
+    font-weight: bold;
+    color: #4CAF50; /* Color verde para el resultado final */
+}
